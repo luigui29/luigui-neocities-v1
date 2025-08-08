@@ -68,9 +68,15 @@ body {
 
 #poked-image { display: none; }
 
+#sticky-button-container {
+    position: fixed;
+    right: 50px;
+    bottom: 40px;
+}
+
 #click-me-btn {
     /*background-color: blue;*/
-    margin: 80px auto 40px auto;
+    margin: auto;
 
     height: 96px;
     width: 96px;
@@ -92,10 +98,5 @@ body {
 
 #click-me-btn:hover {
     transform: scale(1.5);
-}
-
-@keyframes poked_display {
-    0% {display: visible;}
-    100% {display: visible;}
 }
 
