@@ -57,7 +57,6 @@ body {
     padding-bottom: 10px;
 }
 
-
 #center-image-div {
     width: auto;
     height: 500px;
@@ -65,6 +64,10 @@ body {
     
     display: flex;
     justify-content: center;
+}
+
+#poked-image {
+    display: none;
 }
 
 #click-me-btn {
@@ -91,5 +94,10 @@ body {
 
 #click-me-btn:hover {
     transform: scale(1.5);
+}
+
+@keyframes poked_display {
+    0% {display: visible;}
+    100% {display: visible;}
 }
 
