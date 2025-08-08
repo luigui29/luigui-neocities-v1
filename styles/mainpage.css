@@ -66,13 +66,11 @@ body {
     justify-content: center;
 }
 
-#poked-image {
-    display: none;
-}
+#poked-image { display: none; }
 
 #click-me-btn {
     /*background-color: blue;*/
-    margin: 120px auto 5% auto;
+    margin: 80px auto 40px auto;
 
     height: 96px;
     width: 96px;
