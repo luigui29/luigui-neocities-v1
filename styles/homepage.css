@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'Roblox';
+    src: url(../fonts/RobloxFont-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Press2P';
+    src: url(../fonts/PressStart2P-Regular.ttf) format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background: radial-gradient(
+        circle,
+        rgba(138, 138, 138, 1) 0%,
+        rgba(252, 70, 107, 0) 100%
+    );
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    position: relative;
+}
+
+.h1-container {
+    width: 500px;
+    height: 100px;
+
+    background-image: radial-gradient(
+        circle,
+        rgb(255, 255, 255) 0%,
+        rgb(255, 255, 255) 20%,
+        rgba(255, 255, 255, 0.087) 100%
+    );
+
+    margin: 10px auto 10px auto;
+}
+.h1-container > h1 {
+    font-family: 'Roblox';
+    font-size: 54px;
+    color: red;
+
+    margin: 0;
+    padding-top: 20px;
+}
+
+.container:has(> #luigui-laptop-img) { 
+    background-image: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+
+    margin: 50px auto 50px auto;
+}
+.container:has(> #luigui-laptop-img)::before {
+    content: " ";
+    background-image: linear-gradient(
+        328deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(151, 183, 186, 1) 35%,
+        rgba(93, 228, 240, 1) 60%,
+        rgba(144, 237, 245, 1) 70%,
+        rgba(240, 255, 255, 1) 95%
+    );
+
+    width: 360px;
+    height: 360px;
+    border-radius: 100%;
+
+    position: absolute;
+    z-index: -1;
+}
+
+.container:has(> #luigui-laptop-img)::after {
+    content: " ";
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.502);
+
+    width: 400px;
+    height: 400px;
+    background-image: url(/images/roblox_blocky_texture.png);
+    background-size: cover;
+
+    position: absolute;
+    z-index: -2;
+}
+
+#luigui-laptop-img {
+    border-radius: 100%;
+
+    position: relative;
+    z-index: 5;
+}
+
+#download-badge-container {
+    position: absolute;
+    z-index: 5;
+    align-items: start;
+    text-align: left;
+
+    width: 150px;
+    height: 100px;
+
+    right: -190px;
+    bottom: -30px;
+}
+.download-button {
+    width: 100px;
+    height: 35px;
+
+    color: white;
+    background-image: linear-gradient(
+        180deg,
+        rgba(255,255,255,1) 0%,
+        rgba(0, 36, 10, 0.5) 21%,
+        rgba(9, 121, 16, 0.9) 51%,
+        rgba(81, 255, 0, 0.8) 100%
+    );
+    border: 1px solid white;
+}
