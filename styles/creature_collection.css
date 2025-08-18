@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: auto;
+    width: auto;
+    background-color: red;
+}
+
+.container:has(> .main-creature-img-container:first-child) {
+    margin: auto;
+
+    display: flex;
+    /* background-color: green; */
+}
+
+.main-creature-img-container {
+    width: fit-content;
+    height: 256px;
+    background-color: rgba(102, 102, 102, 0.349);
+}
+
+.main-creature-img-container > img {
+    image-rendering: pixelated;
+
+    display: block;
+}
+
+.creature-stats-container {
+    width: 300px;
+    background-color: rgba(53, 255, 113, 0.336);
+
+    flex: 1;
+    overflow-y: scroll;
+}
+
+.creature-desc-container {
+    width: 40px;
+}
+
